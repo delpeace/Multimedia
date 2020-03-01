@@ -34,8 +34,27 @@ public class Television {
         this.currentProgram = currentProgram;
     } 
     
-    public void setTurnO(boolean turnOn) {
+    public void setTurnOn(boolean turnOn) {
         this.turnOn = turnOn;
+    }
+    
+    public Television() {
+        this.turnOn = false;
+        this.volume = 13;
+        this.currentProgram = 8;
+    }
+    
+    public Television(boolean turnOn, int volume, int currentProgram) {
+        this.turnOn = turnOn;
+        this.volume = volume;
+        this.currentProgram = currentProgram; 
+    }
+    
+    public void info() {
+        System.out.println("Da li je TV ukljucen: " + this.turnOn);
+        System.out.println("Jacina zvuka: " + this.volume);
+        System.out.println("Trenutni kanal: " + this.currentProgram);
+        System.out.println();
     }
     
     

@@ -12,7 +12,7 @@ package media;
 public class Radio {
     private double fmFrequency;
     private int amFrequency;
-    private char frequencyType;
+    private char band;
     
     public double getFmFrequency() {
         return this.fmFrequency;
@@ -22,8 +22,8 @@ public class Radio {
         return this.amFrequency;
     }
     
-    public char getFrequencyType() {
-        return this.frequencyType;
+    public char getBandIs() {
+        return this.band;
     }
     
     public void setFmFrequency(double fmFrequency) {
@@ -34,8 +34,16 @@ public class Radio {
         this.amFrequency = amFrequency;
     }
     
-    public void setFrequencyType(char frequencyType) {
-        this.frequencyType = frequencyType;
+    public void setBand(char band) {
+        this.band = band;
     }
+    
+    public void info() {
+        System.out.println("FM frekvencija: " + this.fmFrequency);
+        System.out.println("AM frekvencija: " + this.amFrequency);
+        System.out.println("Trenutni talas: " + this.band);
+    }
+    
+    
     
 }
